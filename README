@@ -14,7 +14,8 @@ python -m pip install -r requirements.txt
 le code est dans ~/cdk_labs/aws_cdk_labs_stack.py
 
 Useful commands
-* cdk bootstrap initialize assets before deploy
-* cdk synth emits the synthesized CloudFormation template
-* cdk deploy deploy this stack to your default AWS account/region
+* cdk bootstrap aws://844989642143/eu-west-3   -  initialize assets before deploy
+* cdk synth -  emits the synthesized CloudFormation template
+* cdk deploy - deploy this stack to your default AWS account/region
 * aws ssm start-session --target i-xxxxxxxxx remote session for shell access
+* cdk destroy

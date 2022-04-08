@@ -3,7 +3,7 @@ import os
 
 import aws_cdk as cdk
 
-from aws_cdk_labs.aws_cdk_labs_stack import EC2InstanceStack
+from aws_cdk_labs.aws_cdk_labs_stack import EC2InstanceStack, DynamoDBStack, LambdaCronStack
 
 
 app = cdk.App()
@@ -24,5 +24,7 @@ EC2InstanceStack(app, "EC2InstanceStack",
 
                  # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
                  )
+DynamoDBStack(app, "DynamoDBStack")
+LambdaCronStack(app, "LambdaCronStack")
 
 app.synth()
