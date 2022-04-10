@@ -1,5 +1,7 @@
 Ref : https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html
 Examples python : https://github.com/aws-samples/aws-cdk-examples/tree/master/python
+Solution stacks : https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html
+
 Prereq : 
 python -m ensurepip --upgrade
 python -m pip install --upgrade pip
@@ -14,6 +16,7 @@ python -m pip install -r requirements.txt
 le code est dans ~/cdk_labs/aws_cdk_labs_stack.py
 
 Useful commands
+* cdk init app --language python
 * cdk bootstrap aws://844989642143/eu-west-3   -  initialize assets before deploy
 * cdk synth -  emits the synthesized CloudFormation template
 * cdk deploy - deploy this stack to your default AWS account/region
