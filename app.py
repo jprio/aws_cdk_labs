@@ -9,6 +9,7 @@ from aws_cdk_labs.aws_lambda_stack import LambdaCronStack
 from aws_cdk_labs.aws_beanstalk_stack import BeanstalkS3Stack
 from aws_cdk_labs.aws_beanstalk_stack import BeanstalkAppStack
 from aws_cdk_labs.aws_beanstalk_stack import BeanstalkEnvStack
+from aws_cdk_labs.aws_batch_stack import BatchStack
 
 app = cdk.App()
 # EC2InstanceStack(app, "EC2InstanceStack",
@@ -62,5 +63,6 @@ def create_ebs_stack():
     beanstalk_env.add_dependency(beanstalk_app)
 
 
-create_ebs_stack()
+#create_ebs_stack()
+BatchStack(app, "BatchStack")
 app.synth()
