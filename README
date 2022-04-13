@@ -3,17 +3,20 @@ Examples python : https://github.com/aws-samples/aws-cdk-examples/tree/master/py
 Solution stacks : https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html
 
 Prereq : 
+npm install -g aws-cdk
 python -m ensurepip --upgrade
 python -m pip install --upgrade pip
 python -m pip install --upgrade virtualenv
 
-
+aws configure
 
 mkdir -p ~/cdk_labs
 cdk init app --language python
 python -m pip install -r requirements.txt
 
 le code est dans ~/cdk_labs/aws_cdk_labs_stack.py
+
+
 
 Useful commands
 * cdk init app --language python
